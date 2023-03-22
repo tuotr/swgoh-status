@@ -23,16 +23,6 @@
         font-size: 1.2rem;
         text-align: center;
 
-        > span {
-            position: absolute;
-            right: 0.3rem;
-            color: #ffaaaa;
-            text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-
-            &.has {
-                color: #aaffaa;
-            }
-        }
     }
     th {
         border: 1px solid #181b1f;
