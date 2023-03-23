@@ -26,4 +26,7 @@
         </p>
         <p>SWGoH Status is not affiliated with EA, EA Capital Games, Disney, or Lucasfilm LTD.</p>
     </div>
+    <div>
+        If things are broken: <a href='#' on:click={resetLocalStorage}>Reset local storage</a>
+    </div>
 </footer>

@@ -1,6 +1,6 @@
 // svelte.config.js
-import preprocess from 'svelte-preprocess';
+import sveltePreprocess  from 'svelte-preprocess';
 
 module.exports = {
-    preprocess: preprocess()
+    preprocess: sveltePreprocess()
 };

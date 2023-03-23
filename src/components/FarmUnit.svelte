@@ -17,7 +17,7 @@
     const hasCount = (hasStars | 0) + (hasGear | 0) + (hasRelic | 0)
 </script>
 
-<style type="text/scss">
+<style lang="scss">
     tr:nth-child(even) {
         background: #282b2f;
     }
@@ -34,6 +34,11 @@
     td.image {
         padding: 0 1px 0 0;
         width: 33px;
+
+        img {
+            box-sizing: border-box;
+            margin-bottom: -1px;
+        }
 
     }
     td.light img {
@@ -61,10 +66,66 @@
         width: 3.5rem;
 
 
+        span {
+            display: inline-block;
+            &:first-child {
+                text-align: right;
+                width: 1.1rem;
+            }
+            &:last-child {
+                text-align: left;
+                width: 1.1rem;
+            }
+        }
+        > div {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            > div {
+                border: 1px solid #181b1f;
+                bottom: -1px;
+                height: 7px;
+                position: absolute;
+                width: 10px;
+                &:nth-child(1) {
+                    left: -1px;
+                }
+                &:nth-child(2) {
+                    left: 10px;
+                }
+                &:nth-child(3) {
+                    left: 21px;
+                }
+                &:nth-child(4) {
+                    left: 32px;
+                }
+                &:nth-child(5) {
+                    left: 43px;
+                }
+                &:nth-child(6) {
+                    left: 54px;
+                }
+                &.missing {
+                    background: rgba(255, 0, 0, 0.5);
+                }
+                &.success {
+                    background: rgba(31, 255, 112, 0.5);
+                }
+            }
+        }
     }
     td.numbers2 {
         width: calc(4.0rem + 1px);
 
+        span {
+            &:first-child {
+                width: 1.4rem;
+            }
+            &:last-child {
+                width: 1.4rem;
+            }
+        }
     }
     .left {
         padding-right: 0;
