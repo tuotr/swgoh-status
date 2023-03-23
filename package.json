@@ -4,7 +4,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv build -p 5000",
+    "start": "sirv build --host $HOST --port $PORT",
     "validate": "svelte-check"
   },
   "devDependencies": {
