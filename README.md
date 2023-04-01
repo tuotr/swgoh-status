@@ -1,11 +1,20 @@
 # SW:GoH Status
 
+This project has been forked from https://github.com/ThingEngineering/swgoh-status
+
+I have upgraded libraries and updated with new farms (from uncommited pull requests). 
+
 A simple web app to show event farming status for Star Wars: Galaxy of Heroes players using the [SWGOH.GG](https://swgoh.gg) API. Written in [TypeScript](https://www.typescriptlang.org/) and [Svelte](https://svelte.dev)
 because I felt like learning some new things.
 
-Live version: https://swgoh.freddie.wtf
+Live version: https://swgoh-farm.herokuapp.com
 
 ## Development setup
+
+Modify package.json file and replace $PORT nad $HOST in start line as below
+    "start": "sirv build --host 0.0.0.0 --port 5000",
+
+Setup your own CORS proxy: https://github.com/dinkatoid/cors-anywhere
 
 1. Install [Node.js](https://nodejs.org/en/) if you haven't already.
 2. Run `npm install` in a command prompt/shell.
